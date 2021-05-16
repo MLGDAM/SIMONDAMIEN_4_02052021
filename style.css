@@ -647,15 +647,20 @@ h5,
 h6,
 p,
 label,
-.btn,
-a {
+.btn
+ {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
 }
-
+a{
+    font-family: "helvetica";
+    font-weight: 400;
+    color: #1F1F1F!important; 
+}
 .container {
     max-width: 1000px;
+
 }
 
 .hero-bloc-text {
@@ -677,7 +682,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
@@ -728,6 +733,7 @@ h1 {
 
 h4 {
     color: #333333!important;
+    font-size: 22px;
 }
 
 .icons {
