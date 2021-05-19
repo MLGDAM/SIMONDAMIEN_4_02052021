@@ -5,6 +5,7 @@
 	<meta name="description"
 	content="Développez votre site internet avec La Chouette Agence. Nous intégrons à votre site le Web design, la Stratégie et les Illustrations adaptées à l'essence de votre entreprise.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta name="robots" content="index"/>
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
     
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
@@ -12,12 +13,11 @@
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 	
-    
-	<script src="./js/jquery-2.1.0.js"></script>
-	<script src="./js/bootstrap.js"></script>
-	<script src="./js/blocs.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>
+	<script src="./js/jquery-2.1.0.js" defer></script>
+	<script src="./js/bootstrap.js" defer></script>
+	<script src="./js/blocs.js" defer></script>
+	<script src="./js/jqBootstrapValidation.js" defer></script>
+	<script src="./js/formHandler.js" defer></script>
     <title>Contact : Web Design, Stratégie et Illustrations.</title>
 
     
@@ -60,10 +60,10 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12">
-				<h1 class="text-center hero-bloc-text tc-white">
+				<h1 class="text-center hero-bloc-text tc-black">
 					Parlons web design !
 				</h1>
-				<p class="text-center mg-lg tc-white tight-width-whitespace">
+				<p class="text-center mg-lg tc-black tight-width-whitespace">
 					Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
 					Parlez-nous de votre projet en complétant le formulaire ci-dessous.
 				</p>
@@ -80,27 +80,27 @@
 			<div class="col-sm-6">
 				<form id="form_1">
 					<div class="form-group">
-						<label>
+						<label for="Name">
 							Nom
 						</label>
-						<input id="name" class="form-control" required />
+						<input class="form-control" type="text" placeholder="jean-chouette" required id="Name"/>
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="mail">
 							Adresse email
 						</label>
-						<input id="email" class="form-control" type="email" required />
+						<input class="form-control" placeholder="jean-chouette@gmail.com"  required id="mail" />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="knowus">
 							Comment nous avez-vous connu ?
 						</label>
-						<input class="form-control" type="email" required id="input_504" />
+						<input class="form-control" placeholder="Sur internet, dans le journal..." required id="knowus" />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="project">
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						</label><textarea id="project" class="form-control" placeholder="Votre Stratégie Web, vos produits, le public visé.." rows="4" cols="50" required id="project"></textarea>
 					</div> 
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
@@ -127,28 +127,29 @@
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
-				<p class="text-center white">
+				<p class="text-center black">
 					La chouette agence - Agence web basée à Lyon.<br>
 				</p>
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" href="https://twitter.com/agencechouette" title="Twitter"><span class="fa fa-twitter icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" href="https://www.facebook.com/LaChouetteAgence/" title="Facebook"><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" href="https://dribbble.com/search/la%20chouette%20agence" title="Dribbble"><span class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" href="https://www.instagram.com/lachouetteagence/" title="Instagram"><span
+									class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
 				</div>
